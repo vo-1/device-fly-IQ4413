@@ -14,7 +14,7 @@ git apply -v ../../../device/micromax/AQ5001/patches/frameworks_opt_telephony/fr
 cd ../../..
 cd hardware/libhardware
 git apply -v ../../../device/micromax/AQ5001/patches/hardware_libhardware/hardware_libhardware.patch
-cd ../../..
+cd ../..
 cd packages/services/Telecomm
 git apply -v ../../../device/micromax/AQ5001/patches/packages_services_Telecomm/services_Telecomm.patch
 cd ../../..
