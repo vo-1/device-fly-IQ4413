@@ -12,7 +12,7 @@ cd ../..
 cd frameworks/opt/telephony
 git apply -v ../../../device/micromax/AQ5001/patches/frameworks_opt_telephony/frameworks_opt_telephony.patch
 cd ../../..
-cd packages/hardware/libhardware
+cd hardware/libhardware
 git apply -v ../../../device/micromax/AQ5001/patches/hardware_libhardware/hardware_libhardware.patch
 cd ../../..
 cd packages/services/Telecomm
