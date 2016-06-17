@@ -5,7 +5,7 @@
 /dev/bootimg		/boot		emmc	defaults defaults
 /dev/recovery		/recovery	emmc	defaults defaults
 /emmc@android     /system             ext4      ro                                                          wait
-/emmc@usrdata     /data               ext4      noatime,nosuid,nodev,noauto_da_alloc,discard                wait,check,resize,encryptable=/dev/block/platform/mtk-msdc.0/by-name/metadata
+/emmc@usrdata     /data               ext4      noatime,nosuid,nodev,noauto_da_alloc,discard                wait,check
 /emmc@cache       /cache              ext4      noatime,nosuid,nodev,noauto_da_alloc,discard                wait,check
 /emmc@protect_f   /protect_f          ext4      noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc    wait,check,autoformat
 /emmc@protect_s   /protect_s          ext4      noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc    wait,check,autoformat
