@@ -12,7 +12,6 @@ import init.volte.rc
 import init.epdg.rc
 import init.nvdata.rc
 import init.trustonic.rc
-import init.mt6582.power.rc
 import init.modem.rc
 import init.trace.rc
 
