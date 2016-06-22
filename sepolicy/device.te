@@ -19,7 +19,7 @@ type mt6516_IDP_device, dev_type;
 type mt9p012_device, dev_type;
 type mt6516_jpeg_device, dev_type;
 type FM50AF_device, dev_type;
-type ZC533AF_device, dev_type;
+type AD5823AF_device, dev_type;
 type BU6424AF_device, dev_type;
 type IMX164AF_device, dev_type;
 type DW9714AF_device, dev_type;
