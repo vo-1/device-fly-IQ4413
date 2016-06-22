@@ -475,7 +475,7 @@ index 8f06c55..3ea5583 100644
      $(TOP)/frameworks/av/media/libstagefright/webm                  \
      $(TOP)/frameworks/native/include/media/openmax                  \
      $(TOP)/external/tremolo/Tremolo                                 \
-+    $(TOP)/device/micromax/AQ5001/MediaTek/fmaudioplayer
++    $(TOP)/device/fly/IQ4413/MediaTek/fmaudioplayer
  
  LOCAL_MODULE:= libmediaplayerservice
  
