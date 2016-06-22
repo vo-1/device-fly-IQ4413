@@ -124,7 +124,7 @@ allow factory devpts:chr_file { read write getattr ioctl };
 allow factory vfat:dir search;
 allow factory hrm_device:chr_file { read ioctl open };
 allow factory devmap_device:chr_file { read ioctl open };
-allow factory ZC533AF_device:chr_file { read write ioctl open };
+allow factory AD5823AF_device:chr_file { read write ioctl open };
 # Slid
 allow factory tmpfs:dir { read open write mounton add_name };
 allow factory tmpfs:file { read write open getattr create };
