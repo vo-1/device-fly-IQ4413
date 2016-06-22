@@ -5,11 +5,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
 # call the proprietary setup
-$(call inherit-product-if-exists, vendor/micromax/AQ5001/AQ5001-vendor.mk)
+$(call inherit-product-if-exists, vendor/fly/IQ4413/IQ4413-vendor.mk)
 
 PRODUCT_CHARACTERISTICS := default
 
-LOCAL_PATH := device/micromax/AQ5001
+LOCAL_PATH := device/fly/IQ4413
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := $(LOCAL_PATH)/kernel
 else
@@ -88,7 +88,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/root/init.aee.rc:root/init.aee.rc \
     $(LOCAL_KERNEL):kernel
 
-DEVICE_PACKAGE_OVERLAYS += device/micromax/AQ5001/overlay
+DEVICE_PACKAGE_OVERLAYS += device/fly/IQ4413/overlay
 
 # Charger
 PRODUCT_PACKAGES += \
