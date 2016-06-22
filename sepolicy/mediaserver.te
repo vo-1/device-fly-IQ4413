@@ -124,7 +124,7 @@ allow mediaserver fm_device:chr_file { read write ioctl open };
 # Purpose : for VP/VR
 allow mediaserver block_device:dir search;
 allow mediaserver FM50AF_device:chr_file { read write ioctl open };
-allow mediaserver ZC533AF_device:chr_file { read write ioctl open };
+allow mediaserver AD5823AF_device:chr_file { read write ioctl open };
 allow mediaserver BU6424AF_device:chr_file { read write ioctl open };
 allow mediaserver IMX164AF_device:chr_file { read write ioctl open };
 allow mediaserver AD5820AF_device:chr_file { read write ioctl open };
