@@ -89,7 +89,7 @@
 /dev/expdb(/.*)? u:object_r:expdb_device:s0 
 /dev/fat(/.*)? u:object_r:fat_device:s0 
 /dev/FM50AF(/.*)? u:object_r:FM50AF_device:s0
-/dev/ZC533AF(/.*)? u:object_r:ZC533AF_device:s0
+/dev/AD5823AF(/.*)? u:object_r:AD5823AF_device:s0
 /dev/BU6424AF(/.*)? u:object_r:BU6424AF_device:s0
 /dev/IMX164AF(/.*)? u:object_r:IMX164AF_device:s0
 /dev/fm(/.*)? u:object_r:fm_device:s0
