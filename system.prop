@@ -24,7 +24,7 @@ mediatek.wlan.ctia=0
 #
 wifi.tethering.interface=ap0
 #
-ro.sf.lcd_density=320
+ro.sf.lcd_density=240
 ro.opengles.version=131072
 
 wifi.direct.interface=p2p0
@@ -55,7 +55,7 @@ ro.boot.selinux=disable
 debug.hwui.render_dirty_regions=false
 
 ro.mediatek.chip_ver=S01
-ro.mediatek.version.release=ALPS.L1.MP6.V2_ESKY6580.WE.L_P1
+ro.mediatek.version.release=ALPS.L1.MP12.V1.2_IQ4413.L1_P6
 ro.mediatek.platform=mt6582
 ro.mediatek.version.sdk=4
 ro.telephony.sim.count=2
