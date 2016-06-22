@@ -1,2 +1,2 @@
-add_lunch_combo mk_AQ5001-userdebug
-add_lunch_combo mk_AQ5001-eng
+add_lunch_combo fly_IQ4413-userdebug
+add_lunch_combo fly_IQ4413-eng
