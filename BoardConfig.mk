@@ -1,4 +1,4 @@
-LOCAL_PATH := device/micromax/AQ5001
+LOCAL_PATH := device/fly/IQ4413
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6582
@@ -63,18 +63,18 @@ TARGET_KMODULES := true
 COMMON_GLOBAL_CFLAGS += -DDISABLE_HW_ID_MATCH_CHECK
 TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
 
-TARGET_PREBUILT_KERNEL := device/micromax/AQ5001/kernel
-BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x04000000 --tags_offset 0x0e000000 --board 1441186574
+TARGET_PREBUILT_KERNEL := device/fly/IQ4413/kernel
+BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --board 1441186574
 BOARD_CUSTOM_BOOTIMG := true
-TARGET_PREBUILT_RECOVERY_KERNEL := device/micromax/AQ5001/kernel
+TARGET_PREBUILT_RECOVERY_KERNEL := device/fly/IQ4413/kernel
 
-TARGET_RECOVERY_FSTAB := device/micromax/AQ5001/rootdir/root/fstab.mt6582
+TARGET_RECOVERY_FSTAB := device/fly/IQ4413/rootdir/root/fstab.mt6582
 
-TARGET_OTA_ASSERT_DEVICE := AQ5001,micromax_AQ5001,"micromax AQ5001"
+TARGET_OTA_ASSERT_DEVICE := IQ4413,fly_IQ4413,"fly IQ4413"
 # TWRP
-DEVICE_RESOLUTION := 720x1280
-TARGET_SCREEN_HEIGHT := 1280
-TARGET_SCREEN_WIDTH := 720
+DEVICE_RESOLUTION := 540x960
+TARGET_SCREEN_HEIGHT := 960
+TARGET_SCREEN_WIDTH := 540
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TW_NO_REBOOT_BOOTLOADER := true
 TW_BRIGHTNESS_PATH := /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness
@@ -85,7 +85,7 @@ TW_INTERNAL_STORAGE_MOUNT_POINT := "emmc"
 TW_EXTERNAL_STORAGE_PATH := "/external_sd"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
 TW_CRYPTO_FS_TYPE := "ext4"
-TW_CRYPTO_REAL_BLKDEV := "/dev/block/mmcblk0p7"
+TW_CRYPTO_REAL_BLKDEV := "/dev/block/mmcblk0p8"
 TW_CRYPTO_MNT_POINT := "/data"
 TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,noatime,discard,noauto_da_alloc,data=ordered"
 TW_EXCLUDE_SUPERSU := true
@@ -99,10 +99,10 @@ DISABLE_DEXPREOPT := true
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_MTK := true
 BOARD_BLUETOOTH_DOES_NOT_USE_RFKILL := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/micromax/AQ5001/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/fly/IQ4413/bluetooth
 
 # EGL settings
-BOARD_EGL_CFG := device/micromax/AQ5001/rootdir/system/lib/egl/egl.cfg
+BOARD_EGL_CFG := device/fly/IQ4413/rootdir/system/lib/egl/egl.cfg
 USE_OPENGL_RENDERER := true
 BOARD_EGL_WORKAROUND_BUG_10194508 := true
 
@@ -111,7 +111,7 @@ TARGET_CPU_MEMCPY_OPT_DISABLE := true
 
 # SELINUX
 BOARD_SEPOLICY_DIRS := \
-       device/micromax/AQ5001/sepolicy
+       device/fly/IQ4413/sepolicy
 
 BOARD_SEPOLICY_UNION := \
     app.te \
@@ -297,7 +297,7 @@ BOARD_SEPOLICY_UNION += \
 	tunman.te 
 
 # RIL
-# BOARD_RIL_CLASS := ../../../device/micromax/AQ5001/ril/
+# BOARD_RIL_CLASS := ../../../device/fly/IQ4413/ril/
 
 BOARD_CONNECTIVITY_VENDOR := MediaTek
 BOARD_CONNECTIVITY_MODULE := conn_soc
@@ -318,4 +318,4 @@ WIFI_DRIVER_FW_PATH_AP:=AP
 WIFI_DRIVER_FW_PATH_P2P:=P2P
 
 # GPS
-TARGET_SPECIFIC_HEADER_PATH := device/micromax/AQ5001/include
+TARGET_SPECIFIC_HEADER_PATH := device/fly/IQ4413/include
